@@ -1,0 +1,32 @@
+/* 화면 전체를 사용하기 위한 초기화 */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left; /* 기본 정렬을 왼쪽으로 변경 */
+}
+
+/* 브라우저 기본 여백 제거 */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+}
+
+/* 필요한 경우에만 사용할 로고 애니메이션 (유지) */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
